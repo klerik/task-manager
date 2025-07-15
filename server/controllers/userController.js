@@ -39,6 +39,7 @@ const getUsers = async (req, res) => {
         res.status(500).json({ message: "Server error", error: error.message });
     }
 };
+
 // @desc    Get user by ID
 // @route   GET /api/users/:id
 // @access  Private
@@ -51,6 +52,5 @@ const getUserById = async (req, res) => {
         res.status(500).json({ message: "Server error", error: error.message });
     }
 };
-
 
 module.exports = { getUsers, getUserById };
